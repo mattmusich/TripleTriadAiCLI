@@ -15,7 +15,11 @@ public class Main {
 
         //gen board
         Board board = new Board();
-
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                board.getSlots()[i][j] = new Slot();
+            }
+        }
         //gen players
 
 
@@ -37,8 +41,7 @@ public class Main {
         p1hand.setCards(p1cards);
 
         Slot[][] test = board.getSlots();
-        test[0][0].setCard(c1);
-        test[1][1].setCard(p1cards.get(0));
+        test[0][1].setCard(p1cards.get(0));
         board.setSlots(test);
 
         System.out.println(p1hand);

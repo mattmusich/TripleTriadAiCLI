@@ -36,8 +36,10 @@ public class Hand {
     public String toString(){
         String s = "";
         for (int i = 0; i < this.getCards().size(); i++) {
-            s += this.getCards().get(i).getName();
-            s += ",";
+            s += i + ")";
+            s += this.getCards().get(i).getName() + ": ";
+            s += this.getCards().get(i).getVals();
+            s += "\n";
         }
         return s;
     }
