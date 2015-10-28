@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1750a24-2d99-406d-8aff-c75b90ae102f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/Main.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Board.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Hand.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Hand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/Main.java" afterPath="$PROJECT_DIR$/src/me/musich/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Slot.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Slot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c1750a24-2d99-406d-8aff-c75b90ae102f" name="Default" comment="" />
     <ignored path="TripleTriadAiCLI.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
