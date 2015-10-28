@@ -12,9 +12,9 @@ public class Card {
     private int leftVal;
     private int rightVal;
 
-    private int level; //artifical avg of the vals to balance cards
+    private int level; //artificial avg of the vals to balance cards
 
-    public Card(String name, String description, int upVal, int downVal, int leftVal, int rightVal, int level) {
+    public Card(String name,int upVal, int downVal, int leftVal, int rightVal, int level) {
         this.name = name;
         this.upVal = upVal;
         this.downVal = downVal;
@@ -69,5 +69,10 @@ public class Card {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public String getVals(){
+        String v = this.upVal + "," + this.rightVal + "," + this.downVal + "," + this.leftVal;
+        return v;
     }
 }

@@ -5,6 +5,18 @@ package me.musich.base;
  */
 public class Slot {
 
+    private Card card = null;
 
+    public Slot() {
+        card = null;
+    }
+
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
+    }
 
 }
