@@ -12,14 +12,14 @@ public class Player {
     public static final int PLAYER_NUMBER_TWO = 2;
 
     private String name;
-    private List<Hand> cards;
+    private Hand cards;
     private int currentDeckIndex;
     private int playerNumber;
 
     public Player(String name) {
         this.name = name;
 
-        cards = new ArrayList<>();
+        cards = null;
     }
 
     public String getName() {
@@ -30,11 +30,11 @@ public class Player {
         this.name = name;
     }
 
-    public List<Hand> getHand() {
+    public Hand getHand() {
         return cards;
     }
 
-    public void setHand(List<Hand> cards) {
+    public void setHand(Hand cards) {
         this.cards = cards;
     }
 
@@ -55,7 +55,7 @@ public class Player {
     }
 
     public Hand getCurrentHand() {
-        return cards.get(currentDeckIndex);
+        return cards;
     }
 
 }
