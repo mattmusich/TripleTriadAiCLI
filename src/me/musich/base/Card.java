@@ -14,13 +14,16 @@ public class Card {
 
     private int level; //artificial avg of the vals to balance cards
 
-    public Card(String name,int upVal, int downVal, int leftVal, int rightVal, int level) {
+    private int status;
+
+    public Card(String name,int upVal, int downVal, int leftVal, int rightVal, int level, int status) {
         this.name = name;
         this.upVal = upVal;
         this.downVal = downVal;
         this.leftVal = leftVal;
         this.rightVal = rightVal;
         this.level = level;
+        this.status = status;
     }
 
     public String getName() {
@@ -71,8 +74,21 @@ public class Card {
         this.level = level;
     }
 
+    public void setStatus(int status){
+        this.status = status;
+    }
+
+    public int getStatus(){
+        return status;
+    }
+
     public String getVals(){
         String v = this.upVal + "," + this.rightVal + "," + this.downVal + "," + this.leftVal;
+        return v;
+    }
+
+    public String getBoardString(){
+        String v = this.status + ":" + this.upVal + "," + this.rightVal + "," + this.downVal + "," + this.leftVal;
         return v;
     }
 }

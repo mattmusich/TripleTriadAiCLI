@@ -25,11 +25,11 @@ public class Main {
         Player p1 = new Player("Player");
         Player p2 = new Player("Opponent");
         //gen hands/cards p1
-        Card c1 = new Card("onezard", 1, 1, 5, 4, 1);
-        Card c2 = new Card("twozard", 5, 4, 1, 1, 1);
-        Card c3 = new Card("threezard", 5, 1, 1, 4, 1);
-        Card c4 = new Card("fourzard", 4, 1, 5, 1, 1);
-        Card c5 = new Card("fivezard", 1, 5, 4, 1, 1);
+        Card c1 = new Card("onezard", 1, 1, 5, 4, 1, 0);
+        Card c2 = new Card("twozard", 5, 4, 1, 1, 1, 0);
+        Card c3 = new Card("threezard", 5, 1, 1, 4, 1, 0);
+        Card c4 = new Card("fourzard", 4, 1, 5, 1, 1, 0);
+        Card c5 = new Card("fivezard", 1, 5, 4, 1, 1, 0);
         List<Card> p1cards = new ArrayList<>();
         p1cards.add(c1);
         p1cards.add(c2);
@@ -40,11 +40,11 @@ public class Main {
         p1hand.setCards(p1cards);
         p1.setHand(p1hand);
         //gen hands/cards p2
-        Card c6 = new Card("onezard2", 1, 1, 5, 4, 1);
-        Card c7 = new Card("twozard2", 5, 4, 1, 1, 1);
-        Card c8 = new Card("threezard2", 5, 1, 1, 4, 1);
-        Card c9 = new Card("fourzard2", 4, 1, 5, 1, 1);
-        Card c10 = new Card("fivezard2", 1, 5, 4, 1, 1);
+        Card c6 = new Card("onezard2", 1, 1, 5, 4, 1, 1);
+        Card c7 = new Card("twozard2", 5, 4, 1, 1, 1, 1);
+        Card c8 = new Card("threezard2", 5, 1, 1, 4, 1, 1);
+        Card c9 = new Card("fourzard2", 4, 1, 5, 1, 1, 1);
+        Card c10 = new Card("fivezard2", 1, 5, 4, 1, 1, 1);
         List<Card> p2cards = new ArrayList<>();
         p2cards.add(c6);
         p2cards.add(c7);
@@ -73,8 +73,11 @@ public class Main {
         String cIndex = scanner.nextLine();
         System.out.println("Player 1 select Slot:");
         String sIndex = scanner.nextLine();
-        System.out.println(cIndex + sIndex);
 
+        board.setSlot(Integer.parseInt(sIndex), p1.getCurrentHand().getCards().get(Integer.parseInt(cIndex)));
+
+       
+        System.out.println(board.showBoard());
 
         //call actionHandler and loop
 
