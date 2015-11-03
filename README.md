@@ -11,6 +11,6 @@ A Java Implementation of the Final Fantasy Card Game, Triple Triad, and an AI to
 * [x] Build Human player
 * [ ] Build AI player 20% ALPHA LEVEL
 * [x] Build Console Outputs
-* [ ] Build Settings 
+* [x] Build Settings
 * [ ] Improve upon initial AI
 * [ ] Build statisitcal tracking 10%
