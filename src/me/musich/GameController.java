@@ -4,6 +4,7 @@ import me.musich.base.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by matt on 11/2/2015.
@@ -32,7 +33,7 @@ public class GameController {
             System.out.println(board.showBoard());
 
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){ //turns 1 3 5 7 9
-                List<Integer> data = getCommand(p1);
+                List<Integer> data = getAICommand(p1);
                 int c = data.get(1);
                 int s = data.get(0);
                 System.out.println(c + " " + s);
@@ -40,7 +41,7 @@ public class GameController {
                 board.setSlot(c, p1.getCurrentHand().getCards().get(s));
 
             } else { //turns 2 4 6 8
-                List<Integer> data = getCommand(p2);
+                List<Integer> data = getAICommand(p2);
                 int c = data.get(1);
                 int s = data.get(0);
                 System.out.println(c + " " + s);
@@ -77,6 +78,25 @@ public class GameController {
         return data;
     }
 
+    public List<Integer> getAICommand(Player p){ //User input
+        List<Integer> data = new ArrayList<>();
+        boolean used = false;
+
+        int cIndex = ThreadLocalRandom.current().nextInt(0, 4);
+        data.add(cIndex);
+        while(!used) { //error check to see if slot is used in the game without having to parse the board
+            int sIndex = ThreadLocalRandom.current().nextInt(1, 10);
+            System.out.println(sIndex);
+            if (!usedSlots.contains(sIndex)) {
+                used = true;
+                data.add(sIndex);
+                usedSlots.add(sIndex);
+            } else {
+                System.out.println("Error: Slot already used");
+            }
+        }
+        return data;
+    }
 
     public Player getWinner(){
         int p1c = 0;
