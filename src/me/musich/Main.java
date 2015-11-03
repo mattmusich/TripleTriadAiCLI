@@ -12,6 +12,10 @@ public class Main {
 	    int p1wins = 0;
         int p2wins = 0;
 
+        System.out.println("How many Human Players? (0,1,2)");
+        Scanner scannerP = new Scanner(System.in);
+        String numPlayers = scannerP.nextLine();
+
         System.out.println("How many games do you want run?");
         Scanner scanner = new Scanner(System.in);
         String numGames = scanner.nextLine();
@@ -60,7 +64,7 @@ public class Main {
             p2hand.setCards(p2cards);
             p2.setHand(p2hand);
 
-            GameController game = new GameController(board,p1,p2);
+            GameController game = new GameController(board,p1,p2,Integer.parseInt(numPlayers));
 
             List<Integer> stats = game.startGame();
             if (stats.get(0) == 0){

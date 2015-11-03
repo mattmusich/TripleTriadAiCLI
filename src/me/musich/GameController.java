@@ -14,15 +14,17 @@ public class GameController {
     public Player p1;
     public Player p2;
     public Player currentP;
+    public int playerCount; //0 = ai ai | 1 = player ai | 2 = player player
 
     public Board board;
 
     public ArrayList<Integer> usedSlots;
 
-    public GameController(Board board, Player p1, Player p2){
+    public GameController(Board board, Player p1, Player p2, int playerCount){
         this.board = board;
         this.p1 = p1;
         this.p2 = p2;
+        this.playerCount = playerCount;
     }
 
     public List<Integer> startGame(){
@@ -33,23 +35,34 @@ public class GameController {
             System.out.println(board.showBoard());
 
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){ //turns 1 3 5 7 9
-                List<Integer> data = getAICommand(p1);
-                int c = data.get(1);
-                int s = data.get(0);
-//                System.out.println(c + " " + s);
-//                System.out.println(c + " " + p1.getCurrentHand().getCards().get(s).getName());
-                board.setSlot(c, p1.getCurrentHand().getCards().get(s));
-
+                if(playerCount == 0) { //ai
+                    List<Integer> data = getAICommand(p1);
+                    int c = data.get(1);
+                    int s = data.get(0);
+                    board.setSlot(c, p1.getCurrentHand().getCards().get(s));
+                }
+                if(playerCount == 1 || playerCount == 2){ //human
+                    List<Integer> data = getCommand(p1);
+                    int c = data.get(1);
+                    int s = data.get(0);
+                    board.setSlot(c, p1.getCurrentHand().getCards().get(s));
+                }
             } else { //turns 2 4 6 8
-                List<Integer> data = getAICommand(p2);
-                int c = data.get(1);
-                int s = data.get(0);
-//                System.out.println(c + " " + s);
-//                System.out.println(c + " " + p1.getCurrentHand().getCards().get(s).getName());
-                board.setSlot(c, p2.getCurrentHand().getCards().get(s));
+                if(playerCount == 0 || playerCount == 1) { //ai
+                    List<Integer> data = getAICommand(p2);
+                    int c = data.get(1);
+                    int s = data.get(0);
+                    board.setSlot(c, p2.getCurrentHand().getCards().get(s));
+                }
+                if(playerCount == 2){ //human
+                    List<Integer> data = getCommand(p2);
+                    int c = data.get(1);
+                    int s = data.get(0);
+                    board.setSlot(c, p2.getCurrentHand().getCards().get(s));
+                }
             }
-
         }
+
         System.out.println("FINAL BOARD:\n");
         System.out.println(board.showBoard());
         System.out.println(getWinner().getName() + " Is the Winner!");
