@@ -73,9 +73,12 @@ public class Main {
                 p2wins++;
             }
 
-            System.out.println("Player 1 Wins: " + p1wins);
-            System.out.println("Player 2 Wins: " + p2wins);
+
         }
+        //Stat output
+        System.out.println("Player 1 Wins: " + p1wins);
+        System.out.println("Player 2 Wins: " + p2wins);
+
 
 //        Slot[][] test = board.getSlots();
 //        test[0][1].setCard(p1cards.get(0));

@@ -32,8 +32,10 @@ public class GameController {
         usedSlots = new ArrayList<>();
 
         for (int i = 1; i <= 9; i++){
-            System.out.println(board.showBoard());
 
+            if(playerCount != 0) {
+                System.out.println(board.showBoard());
+            }
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){ //turns 1 3 5 7 9
                 if(playerCount == 0) { //ai
                     List<Integer> data = getAICommand(p1);
@@ -63,15 +65,18 @@ public class GameController {
             }
         }
 
-        System.out.println("FINAL BOARD:\n");
-        System.out.println(board.showBoard());
-        System.out.println(getWinner().getName() + " Is the Winner!");
+        if(playerCount != 0) {
+            System.out.println("FINAL BOARD:\n");
+            System.out.println(board.showBoard());
+            System.out.println(getWinner().getName() + " Is the Winner!");
+            System.out.println("Game Over");
+        }
         if (getWinner().getName().equals("Player 1")){
             stats.add(0);
         } else {
             stats.add(1);
         }
-        System.out.println("Game Over");
+
         return stats;
     }
 
