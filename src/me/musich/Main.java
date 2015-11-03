@@ -9,55 +9,66 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	    int p1wins = 0;
+        int p2wins = 0;
 
         //gen all possible games
 
-
-        //gen board
-        Board board = new Board();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                board.getSlots()[i][j] = new Slot();
+        for (int x = 0; x < 20; x++) {
+            //gen board
+            Board board = new Board();
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    board.getSlots()[i][j] = new Slot();
+                }
             }
+            //gen players
+            Player p1 = new Player("Player 1");
+            Player p2 = new Player("Player 2");
+            //gen hands/cards p1
+            Card c1 = new Card("onezard", 1, 1, 5, 4, 1, 0);
+            Card c2 = new Card("twozard", 5, 4, 1, 1, 1, 0);
+            Card c3 = new Card("threezard", 5, 1, 1, 4, 1, 0);
+            Card c4 = new Card("fourzard", 4, 1, 5, 1, 1, 0);
+            Card c5 = new Card("fivezard", 1, 5, 4, 1, 1, 0);
+            List<Card> p1cards = new ArrayList<>();
+            p1cards.add(c1);
+            p1cards.add(c2);
+            p1cards.add(c3);
+            p1cards.add(c4);
+            p1cards.add(c5);
+            Hand p1hand = new Hand("p1hand");
+            p1hand.setCards(p1cards);
+            p1.setHand(p1hand);
+
+            //gen hands/cards p2
+            Card c6 = new Card("onezard2", 1, 1, 5, 4, 1, 1);
+            Card c7 = new Card("twozard2", 5, 4, 1, 1, 1, 1);
+            Card c8 = new Card("threezard2", 5, 1, 1, 4, 1, 1);
+            Card c9 = new Card("fourzard2", 4, 1, 5, 1, 1, 1);
+            Card c10 = new Card("fivezard2", 1, 5, 4, 1, 1, 1);
+            List<Card> p2cards = new ArrayList<>();
+            p2cards.add(c6);
+            p2cards.add(c7);
+            p2cards.add(c8);
+            p2cards.add(c9);
+            p2cards.add(c10);
+            Hand p2hand = new Hand("p2hand");
+            p2hand.setCards(p2cards);
+            p2.setHand(p2hand);
+
+            GameController game = new GameController(board,p1,p2);
+
+            List<Integer> stats = game.startGame();
+            if (stats.get(0) == 0){
+                p1wins++;
+            } else{
+                p2wins++;
+            }
+
+            System.out.println("Player 1 Wins: " + p1wins);
+            System.out.println("Player 2 Wins: " + p2wins);
         }
-        //gen players
-        Player p1 = new Player("Player 1");
-        Player p2 = new Player("Player 2");
-        //gen hands/cards p1
-        Card c1 = new Card("onezard", 1, 1, 5, 4, 1, 0);
-        Card c2 = new Card("twozard", 5, 4, 1, 1, 1, 0);
-        Card c3 = new Card("threezard", 5, 1, 1, 4, 1, 0);
-        Card c4 = new Card("fourzard", 4, 1, 5, 1, 1, 0);
-        Card c5 = new Card("fivezard", 1, 5, 4, 1, 1, 0);
-        List<Card> p1cards = new ArrayList<>();
-        p1cards.add(c1);
-        p1cards.add(c2);
-        p1cards.add(c3);
-        p1cards.add(c4);
-        p1cards.add(c5);
-        Hand p1hand = new Hand("p1hand");
-        p1hand.setCards(p1cards);
-        p1.setHand(p1hand);
-
-        //gen hands/cards p2
-        Card c6 = new Card("onezard2", 1, 1, 5, 4, 1, 1);
-        Card c7 = new Card("twozard2", 5, 4, 1, 1, 1, 1);
-        Card c8 = new Card("threezard2", 5, 1, 1, 4, 1, 1);
-        Card c9 = new Card("fourzard2", 4, 1, 5, 1, 1, 1);
-        Card c10 = new Card("fivezard2", 1, 5, 4, 1, 1, 1);
-        List<Card> p2cards = new ArrayList<>();
-        p2cards.add(c6);
-        p2cards.add(c7);
-        p2cards.add(c8);
-        p2cards.add(c9);
-        p2cards.add(c10);
-        Hand p2hand = new Hand("p2hand");
-        p2hand.setCards(p2cards);
-        p2.setHand(p2hand);
-
-        GameController game = new GameController(board,p1,p2);
-        game.startGame();
 
 //        Slot[][] test = board.getSlots();
 //        test[0][1].setCard(p1cards.get(0));

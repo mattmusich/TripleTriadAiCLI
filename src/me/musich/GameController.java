@@ -25,8 +25,8 @@ public class GameController {
         this.p2 = p2;
     }
 
-    public void startGame(){
-
+    public List<Integer> startGame(){
+        List<Integer> stats = new ArrayList<>();
         usedSlots = new ArrayList<>();
 
         for (int i = 1; i <= 9; i++){
@@ -36,16 +36,16 @@ public class GameController {
                 List<Integer> data = getAICommand(p1);
                 int c = data.get(1);
                 int s = data.get(0);
-                System.out.println(c + " " + s);
-                System.out.println(c + " " + p1.getCurrentHand().getCards().get(s).getName());
+//                System.out.println(c + " " + s);
+//                System.out.println(c + " " + p1.getCurrentHand().getCards().get(s).getName());
                 board.setSlot(c, p1.getCurrentHand().getCards().get(s));
 
             } else { //turns 2 4 6 8
                 List<Integer> data = getAICommand(p2);
                 int c = data.get(1);
                 int s = data.get(0);
-                System.out.println(c + " " + s);
-                System.out.println(c + " " + p1.getCurrentHand().getCards().get(s).getName());
+//                System.out.println(c + " " + s);
+//                System.out.println(c + " " + p1.getCurrentHand().getCards().get(s).getName());
                 board.setSlot(c, p2.getCurrentHand().getCards().get(s));
             }
 
@@ -53,7 +53,13 @@ public class GameController {
         System.out.println("FINAL BOARD:\n");
         System.out.println(board.showBoard());
         System.out.println(getWinner().getName() + " Is the Winner!");
+        if (getWinner().getName().equals("Player 1")){
+            stats.add(0);
+        } else {
+            stats.add(1);
+        }
         System.out.println("Game Over");
+        return stats;
     }
 
     public List<Integer> getCommand(Player p){ //User input
@@ -86,13 +92,13 @@ public class GameController {
         data.add(cIndex);
         while(!used) { //error check to see if slot is used in the game without having to parse the board
             int sIndex = ThreadLocalRandom.current().nextInt(1, 10);
-            System.out.println(sIndex);
+            //System.out.println(sIndex);
             if (!usedSlots.contains(sIndex)) {
                 used = true;
                 data.add(sIndex);
                 usedSlots.add(sIndex);
             } else {
-                System.out.println("Error: Slot already used");
+                //System.out.println("Error: Slot already used");
             }
         }
         return data;

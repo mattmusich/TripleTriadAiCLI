@@ -78,6 +78,14 @@ public class Card {
         this.status = status;
     }
 
+    public void flipStatus(){
+        if(this.status == 1){
+            this.status = 0;
+        } else {
+            this.status = 1;
+        }
+    }
+
     public int getStatus(){
         return status;
     }
