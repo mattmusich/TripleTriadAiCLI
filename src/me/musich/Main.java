@@ -12,9 +12,12 @@ public class Main {
 	    int p1wins = 0;
         int p2wins = 0;
 
+        System.out.println("How many games do you want run?");
+        Scanner scanner = new Scanner(System.in);
+        String numGames = scanner.nextLine();
         //gen all possible games
 
-        for (int x = 0; x < 20; x++) {
+        for (int x = 0; x < Integer.parseInt(numGames); x++) {
             //gen board
             Board board = new Board();
             for (int i = 0; i < 3; i++) {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="scala-sdk-2.11.6">
+    <archive path="C:/Program Files (x86)/scala/lib/scala-actors-2.11.0.jar" />
+    <archive path="C:/Program Files (x86)/scala/lib/scala-actors-migration_2.11-1.1.0.jar" />
+    <archive path="C:/Program Files (x86)/scala/lib/scala-library.jar" />
+    <archive path="C:/Program Files (x86)/scala/lib/scala-parser-combinators_2.11-1.0.3.jar" />
+    <archive path="C:/Program Files (x86)/scala/lib/scala-reflect.jar" />
+    <archive path="C:/Program Files (x86)/scala/lib/scala-swing_2.11-1.0.1.jar" />
+    <archive path="C:/Program Files (x86)/scala/lib/scala-xml_2.11-1.0.3.jar" />
+  </library>
+</eclipse-userlibraries>
+
