@@ -92,4 +92,37 @@ public class Board {
         b += "\n";
         return b;
     }
+
+    public void cardCapture(int pos, Card card){
+        switch (pos) {
+            case 1:
+                
+                slots[0][0].setCard(card);
+                break;
+            case 2:
+                slots[1][0].setCard(card);
+                break;
+            case 3:
+                slots[2][0].setCard(card);
+                break;
+            case 4:
+                slots[0][1].setCard(card);
+                break;
+            case 5:
+                slots[1][1].setCard(card);
+                break;
+            case 6:
+                slots[2][1].setCard(card);
+                break;
+            case 7:
+                slots[0][2].setCard(card);
+                break;
+            case 8:
+                slots[1][2].setCard(card);
+                break;
+            case 9:
+                slots[2][2].setCard(card);
+                break;
+        }
+    }
 }
