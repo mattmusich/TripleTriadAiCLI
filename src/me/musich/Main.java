@@ -22,8 +22,8 @@ public class Main {
             }
         }
         //gen players
-        Player p1 = new Player("Player");
-        Player p2 = new Player("Opponent");
+        Player p1 = new Player("Player 1");
+        Player p2 = new Player("Player 2");
         //gen hands/cards p1
         Card c1 = new Card("onezard", 1, 1, 5, 4, 1, 0);
         Card c2 = new Card("twozard", 5, 4, 1, 1, 1, 0);
@@ -39,6 +39,7 @@ public class Main {
         Hand p1hand = new Hand("p1hand");
         p1hand.setCards(p1cards);
         p1.setHand(p1hand);
+
         //gen hands/cards p2
         Card c6 = new Card("onezard2", 1, 1, 5, 4, 1, 1);
         Card c7 = new Card("twozard2", 5, 4, 1, 1, 1, 1);
@@ -55,7 +56,8 @@ public class Main {
         p2hand.setCards(p2cards);
         p2.setHand(p2hand);
 
-
+        GameController game = new GameController(board,p1,p2);
+        game.startGame();
 
 //        Slot[][] test = board.getSlots();
 //        test[0][1].setCard(p1cards.get(0));
@@ -66,6 +68,7 @@ public class Main {
 //        System.out.println(board.showBoard());
 
         //start game
+
         /*
         System.out.println(p1.getCurrentHand().toString());
         System.out.println(board.showBoard());
@@ -81,27 +84,36 @@ public class Main {
         System.out.println(board.showBoard());
         */
         //call actionHandler and loop
+        /*
         for (int i = 1; i <= 9; i++){
             System.out.println(board.showBoard());
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){
-                System.out.println(p1.getCurrentHand().toString());
-                System.out.println("Player 1 select card index:");
-                Scanner scanner = new Scanner(System.in);
-                String cIndex = scanner.nextLine();
-                System.out.println("Player 1 select Slot:");
-                String sIndex = scanner.nextLine();
-                board.setSlot(Integer.parseInt(sIndex), p1.getCurrentHand().getCards().get(Integer.parseInt(cIndex)));
+//                System.out.println(p1.getCurrentHand().toString());
+//                System.out.println("Player 1 select card index:");
+//                Scanner scanner = new Scanner(System.in);
+//                String cIndex = scanner.nextLine();
+//                System.out.println("Player 1 select Slot:");
+//                String sIndex = scanner.nextLine();
+//                board.setSlot(Integer.parseInt(sIndex), p1.getCurrentHand().getCards().get(Integer.parseInt(cIndex)));
+                int c = getCommand().get(0);
+                int s = getCommand().get(1);
+                board.setSlot(c, p1.getCurrentHand().getCards().get(s));
+
             } else {
-                System.out.println(p2.getCurrentHand().toString());
-                System.out.println("Player 2 select card index:");
-                Scanner scanner2 = new Scanner(System.in);
-                String cIndex2 = scanner2.nextLine();
-                System.out.println("Player 2 select Slot:");
-                String sIndex2 = scanner2.nextLine();
-                board.setSlot(Integer.parseInt(sIndex2), p2.getCurrentHand().getCards().get(Integer.parseInt(cIndex2)));
+//                System.out.println(p2.getCurrentHand().toString());
+//                System.out.println("Player 2 select card index:");
+//                Scanner scanner2 = new Scanner(System.in);
+//                String cIndex2 = scanner2.nextLine();
+//                System.out.println("Player 2 select Slot:");
+//                String sIndex2 = scanner2.nextLine();
+//                board.setSlot(Integer.parseInt(sIndex2), p2.getCurrentHand().getCards().get(Integer.parseInt(cIndex2)));
+                int c = getCommand().get(0);
+                int s = getCommand().get(1);
+                board.setSlot(c, p2.getCurrentHand().getCards().get(s));
             }
 
         }
+        */
 
         //end the game, loop if more than one game
 
@@ -109,6 +121,8 @@ public class Main {
         //End program
 
     }
+
+
 
 
 

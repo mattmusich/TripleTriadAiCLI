@@ -14,7 +14,7 @@ public class Card {
 
     private int level; //artificial avg of the vals to balance cards
 
-    private int status;
+    private int status; // the player owning the card 0 or 1 (p1 or p2)
 
     public Card(String name,int upVal, int downVal, int leftVal, int rightVal, int level, int status) {
         this.name = name;
