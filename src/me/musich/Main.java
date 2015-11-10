@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+//TODO BETTER GUI, HAND REMOVAL, OUT OF HAND CARD PLAY ERROR, CANT PLAY ON SAME SPOT TWICE, ACTUAL AI
+
 
     public static void main(String[] args) {
 	    int p1wins = 0;
@@ -76,6 +78,7 @@ public class Main {
 
         }
         //Stat output
+        System.out.println("\n");
         System.out.println("Player 1 Wins: " + p1wins);
         System.out.println("Player 2 Wins: " + p2wins);
 

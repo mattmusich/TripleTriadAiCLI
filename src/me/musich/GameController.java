@@ -70,6 +70,8 @@ public class GameController {
             System.out.println(board.showBoard());
             System.out.println(getWinner().getName() + " Is the Winner!");
             System.out.println("Game Over");
+        } else {
+            System.out.println(getWinner().getName() + " Is the Winner!");
         }
         if (getWinner().getName().equals("Player 1")){
             stats.add(0);
