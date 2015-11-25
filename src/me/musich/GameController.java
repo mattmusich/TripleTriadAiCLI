@@ -104,7 +104,7 @@ public class GameController {
         return data;
     }
 
-    public List<Integer> getAICommand(Player p){ //User input
+    public List<Integer> getAICommand(Player p){ //Basic AI input
         List<Integer> data = new ArrayList<>();
         boolean used = false;
 
@@ -124,6 +124,14 @@ public class GameController {
         return data;
     }
 
+    public List<Integer> getAdvAICommand(Player p) { //
+        List<Integer> data = new ArrayList<>();
+
+        AdvAi play = new AdvAi();
+
+
+        return data;
+    }
 
 
     public Player getWinner(){
