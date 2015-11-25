@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,10 +49,12 @@
       <file leaf-file-name="AdvAi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/musich/AdvAi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36637932">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,9 +74,13 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/base/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+              <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
               <folding>
+                <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+                <element signature="method#showBoard#0;class#Board#0" expanded="false" />
                 <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+                <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+                <element signature="e#9761#9806#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -134,11 +140,11 @@
         <option value="$PROJECT_DIR$/src/me/musich/base/Player.java" />
         <option value="$PROJECT_DIR$/src/me/musich/base/Hand.java" />
         <option value="$PROJECT_DIR$/src/me/musich/base/Card.java" />
-        <option value="$PROJECT_DIR$/src/me/musich/base/Board.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/me/musich/Main.java" />
-        <option value="$PROJECT_DIR$/src/me/musich/AdvAi.java" />
         <option value="$PROJECT_DIR$/src/me/musich/GameController.java" />
+        <option value="$PROJECT_DIR$/src/me/musich/base/Board.java" />
+        <option value="$PROJECT_DIR$/src/me/musich/AdvAi.java" />
       </list>
     </option>
   </component>
@@ -533,7 +539,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.403125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="688" y="590" width="833" height="413" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.403125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="688" y="590" width="833" height="413" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -609,7 +615,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
             <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,7 +681,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
             <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,7 +747,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
             <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -795,7 +813,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
             <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -857,7 +879,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
             <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -919,7 +945,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
             <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -956,29 +986,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/musich/base/Slot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/musich/base/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/musich/base/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
-          <folding>
-            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,9 +1012,31 @@
     <entry file="file://$PROJECT_DIR$/src/me/musich/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/musich/base/Slot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/musich/base/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+          <folding>
+            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
+            <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
+            <element signature="e#9761#9806#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1010,7 +1044,7 @@
     <entry file="file://$PROJECT_DIR$/src/me/musich/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1019,10 +1053,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/musich/AdvAi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36637932">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>

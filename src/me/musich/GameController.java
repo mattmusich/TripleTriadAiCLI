@@ -125,9 +125,10 @@ public class GameController {
     }
 
     public List<Integer> getAdvAICommand(Player p) { //
-        List<Integer> data = new ArrayList<>();
-
-        AdvAi play = new AdvAi();
+        List<Integer> data;
+        Board b = board;
+        AdvAi play = new AdvAi(b);
+        data = play.getPlay(p);
 
 
         return data;

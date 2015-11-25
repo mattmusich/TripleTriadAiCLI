@@ -244,4 +244,39 @@ public class Board {
                 break;
         }
     }
+
+    public boolean isBoardEmpty(){
+
+//        if(slots[0][0].getCard() == null) {
+//            if(slots[1][0].getCard() == null) {
+//                if(slots[2][0].getCard() == null) {
+//                    if(slots[0][1].getCard() == null) {
+//                        if(slots[1][1].getCard() == null) {
+//                            if(slots[2][1].getCard() == null) {
+//                                if(slots[0][2].getCard() == null) {
+//                                    if(slots[1][2].getCard() == null) {
+//                                        if(slots[2][2].getCard() == null) {
+//
+//                                        }
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                Slot s = slots[i][j];
+                if (s.getCard() != null){
+                    return false;
+                }
+            }
+        }
+        return true;
+
+    }
 }
