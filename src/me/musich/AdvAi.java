@@ -26,8 +26,17 @@ public class AdvAi {
     public List<Integer> getPlay(Player p){
 
         if(board.isBoardEmpty()){
+            int cIndex = p.getCurrentHand().getBestCornerCard();
+            data.add(cIndex);
+//            System.out.println("Turn 1 Card Choice: " +cIndex);
+            int sIndex = 1;
+            data.add(sIndex);
+        } else{
             int cIndex = ThreadLocalRandom.current().nextInt(0, 4);
             data.add(cIndex);
+//            System.out.println("Turn 2 Card Choice: " +cIndex);
+            int sIndex = ThreadLocalRandom.current().nextInt(1, 10);
+            data.add(sIndex);
         }
 
         return data;

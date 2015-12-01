@@ -43,4 +43,27 @@ public class Hand {
         }
         return s;
     }
+
+    public int getCardIndex(Card c){
+        for(int i = 0; i < this.cards.size(); i++){
+            if (c == this.cards.get(i)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int getBestCornerCard(){
+        Card bestCard = new Card("default", 0, 0, 0, 0, 0, 0);
+        for (Card c: cards) {
+            if(c.getdownVal() > bestCard.getdownVal()){
+                if(c.getrightVal() > bestCard.getrightVal()){
+                    bestCard = c;
+                } else if (c.getdownVal() > bestCard.getrightVal()){
+                    bestCard = c;
+                }
+            }
+        }
+        return getCardIndex(bestCard);
+    }
 }

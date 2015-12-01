@@ -33,39 +33,42 @@ public class GameController {
 
         for (int i = 1; i <= 9; i++){
 
-            if(playerCount != 0) {
+            if(playerCount == 0) {
                 System.out.println(board.showBoard());
+                for (Integer q: usedSlots ) {
+                    System.out.println(q + " ");
+                }
             }
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){ //turns 1 3 5 7 9
                 if(playerCount == 0) { //ai
-                    List<Integer> data = getAICommand(p1);
-                    int c = data.get(1);
-                    int s = data.get(0);
-                    board.setSlot(c, p1.getCurrentHand().getCards().get(s));
+                    List<Integer> data = getAdvAICommand(p1);
+                    int s = data.get(1);
+                    int c = data.get(0);
+                    board.setSlot(s, p1.getCurrentHand().getCards().get(c));
                 }
                 if(playerCount == 1 || playerCount == 2){ //human
                     List<Integer> data = getCommand(p1);
-                    int c = data.get(1);
-                    int s = data.get(0);
-                    board.setSlot(c, p1.getCurrentHand().getCards().get(s));
+                    int s = data.get(1);
+                    int c = data.get(0);
+                    board.setSlot(s, p1.getCurrentHand().getCards().get(c));
                 }
             } else { //turns 2 4 6 8
                 if(playerCount == 0 || playerCount == 1) { //ai
                     List<Integer> data = getAICommand(p2);
-                    int c = data.get(1);
-                    int s = data.get(0);
-                    board.setSlot(c, p2.getCurrentHand().getCards().get(s));
+                    int s = data.get(1);
+                    int c = data.get(0);
+                    board.setSlot(s, p2.getCurrentHand().getCards().get(c));
                 }
                 if(playerCount == 2){ //human
                     List<Integer> data = getCommand(p2);
-                    int c = data.get(1);
-                    int s = data.get(0);
-                    board.setSlot(c, p2.getCurrentHand().getCards().get(s));
+                    int s = data.get(1);
+                    int c = data.get(0);
+                    board.setSlot(s, p2.getCurrentHand().getCards().get(c));
                 }
             }
         }
 
-        if(playerCount != 0) {
+        if(playerCount == 0) {
             System.out.println("FINAL BOARD:\n");
             System.out.println(board.showBoard());
             System.out.println(getWinner().getName() + " Is the Winner!");
@@ -125,11 +128,21 @@ public class GameController {
     }
 
     public List<Integer> getAdvAICommand(Player p) { //
-        List<Integer> data;
-        Board b = board;
-        AdvAi play = new AdvAi(b);
-        data = play.getPlay(p);
-
+        List<Integer> data = new ArrayList<>();
+        boolean used = false;
+        while(!used) { //error check to see if slot is used in the game without having to parse the board
+            Board b = board;
+            AdvAi play = new AdvAi(b);
+            data = play.getPlay(p);
+            int sIndex = data.get(1);
+            if (!usedSlots.contains(sIndex)) {
+                used = true;
+                data.add(sIndex);
+                usedSlots.add(sIndex);
+            } else {
+                //System.out.println("Error: Slot already used");
+            }
+        }
 
         return data;
     }
