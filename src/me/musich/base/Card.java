@@ -16,7 +16,7 @@ public class Card {
 
     private int status; // the player owning the card 0 or 1 (p1 or p2)
 
-    public Card(String name,int upVal, int downVal, int leftVal, int rightVal, int level, int status) {
+    public Card(String name,int upVal, int rightVal, int downVal, int leftVal, int level, int status) {
         this.name = name;
         this.upVal = upVal;
         this.downVal = downVal;
@@ -97,6 +97,11 @@ public class Card {
 
     public String getBoardString(){
         String v = this.status + ":" + this.upVal + "," + this.rightVal + "," + this.downVal + "," + this.leftVal;
+        return v;
+    }
+
+    public int sumVals(){
+        int v = this.upVal + this.rightVal + this.downVal + this.leftVal;
         return v;
     }
 }

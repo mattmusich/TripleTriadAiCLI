@@ -53,15 +53,21 @@ public class Hand {
         return -1;
     }
 
-    public int getBestCornerCard(){
+    public int getWeakestCard(){
+        Card worstCard = new Card("default", 9, 9, 9, 9, 0, 0);
+        for (Card c: cards) {
+            if(c.sumVals() <= worstCard.sumVals()){
+                worstCard = c;
+            }
+        }
+        return getCardIndex(worstCard);
+    }
+
+    public int getBestTopLeftCornerCard(){
         Card bestCard = new Card("default", 0, 0, 0, 0, 0, 0);
         for (Card c: cards) {
-            if(c.getdownVal() > bestCard.getdownVal()){
-                if(c.getrightVal() > bestCard.getrightVal()){
-                    bestCard = c;
-                } else if (c.getdownVal() > bestCard.getrightVal()){
-                    bestCard = c;
-                }
+            if (c.getdownVal() + c.getrightVal() > bestCard.getdownVal() + bestCard.getrightVal()){
+                bestCard = c;
             }
         }
         return getCardIndex(bestCard);

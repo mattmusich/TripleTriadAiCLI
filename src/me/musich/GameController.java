@@ -35,9 +35,9 @@ public class GameController {
 
             if(playerCount == 0) {
                 System.out.println(board.showBoard());
-                for (Integer q: usedSlots ) {
-                    System.out.println(q + " ");
-                }
+//                for (Integer q: usedSlots ) {
+//                    System.out.println(q + " ");
+//                }
             }
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){ //turns 1 3 5 7 9
                 if(playerCount == 0) { //ai
@@ -68,7 +68,7 @@ public class GameController {
             }
         }
 
-        if(playerCount == 0) {
+        if(playerCount != 0) {
             System.out.println("FINAL BOARD:\n");
             System.out.println(board.showBoard());
             System.out.println(getWinner().getName() + " Is the Winner!");
