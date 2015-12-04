@@ -119,12 +119,16 @@ public class GameController {
             System.out.println(p.getName() + " select card index (0-" + (p.getCurrentHand().getCards().size()-1) + "):");
             Scanner scanner = new Scanner(System.in);
             String cIndex = scanner.nextLine();
-            if(Integer.parseInt(cIndex) <= p.getCurrentHand().getCards().size()-1 && Integer.parseInt(cIndex) >= 0) {
-                data.add(Integer.parseInt(cIndex));
-                cardused = true;
-            } else {
-                System.out.println("Error: Card out of Range \n Please enter a number from 0-" + (p.getCurrentHand().getCards().size()-1));
+            if(!cIndex.equals("")) {
+                if (Integer.parseInt(cIndex) <= p.getCurrentHand().getCards().size() - 1 && Integer.parseInt(cIndex) >= 0) {
+                    data.add(Integer.parseInt(cIndex));
+                    cardused = true;
+                } else {
+                    System.out.println("Error: Card out of Range \n Please enter a number from 0-" + (p.getCurrentHand().getCards().size() - 1));
 
+                }
+            } else {
+                System.out.println("Error: Please enter a number \n Please enter a number from 0-" + (p.getCurrentHand().getCards().size() - 1));
             }
         }
         //gets the slot and prevents crashes
@@ -132,16 +136,20 @@ public class GameController {
             System.out.println(p.getName() + " select Slot (1-9):");
             Scanner scanner = new Scanner(System.in);
             String sIndex = scanner.nextLine();
-            if(Integer.parseInt(sIndex) <= 9 && Integer.parseInt(sIndex) >= 1) {
-                if (!usedSlots.contains(Integer.parseInt(sIndex))) {
-                    used = true;
-                    data.add(Integer.parseInt(sIndex));
-                    usedSlots.add(Integer.parseInt(sIndex));
+            if(!sIndex.equals("")) {
+                if (Integer.parseInt(sIndex) <= 9 && Integer.parseInt(sIndex) >= 1) {
+                    if (!usedSlots.contains(Integer.parseInt(sIndex))) {
+                        used = true;
+                        data.add(Integer.parseInt(sIndex));
+                        usedSlots.add(Integer.parseInt(sIndex));
+                    } else {
+                        System.out.println("Error: Slot already used");
+                    }
                 } else {
-                    System.out.println("Error: Slot already used");
+                    System.out.println("Error: Slot out of Range \n Please enter a number from 1-9");
                 }
             } else {
-                System.out.println("Error: Slot out of Range \n Please enter a number from 1-9");
+                System.out.println("Error: Please enter a number from 1-9");
             }
         }
         return data;
