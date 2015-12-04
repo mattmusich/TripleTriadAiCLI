@@ -22,7 +22,7 @@ public class Main {
         int p2wins = 0;
 
         /* User Inputs for setup */
-        System.out.println("How many Human Players? (0,1,2) \n 0) Two AI's will play  \n 1) You will play an AI \n 2) You will play another Human, taking turns ");
+        System.out.println("How many Human Players? (0,1,2) \n 0) Two AI's will play (Non-Interactive)  \n 1) You will play an AI \n 2) You will play another Human, taking turns ");
         Scanner scannerP = new Scanner(System.in);
         String numPlayers = scannerP.nextLine();
 

@@ -119,7 +119,7 @@ public class GameController {
             System.out.println(p.getName() + " select card index (0-" + (p.getCurrentHand().getCards().size()-1) + "):");
             Scanner scanner = new Scanner(System.in);
             String cIndex = scanner.nextLine();
-            if(Integer.parseInt(cIndex) < p.getCurrentHand().getCards().size()-1 && Integer.parseInt(cIndex) >= 0) {
+            if(Integer.parseInt(cIndex) <= p.getCurrentHand().getCards().size()-1 && Integer.parseInt(cIndex) >= 0) {
                 data.add(Integer.parseInt(cIndex));
                 cardused = true;
             } else {

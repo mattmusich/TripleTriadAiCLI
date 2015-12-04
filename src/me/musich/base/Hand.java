@@ -36,7 +36,7 @@ public class Hand {
     }
 
     public String toString(){
-        String s = "";
+        String s = "The card values are the following sides in order: up, right, down, left\n";
         for (int i = 0; i < this.getCards().size(); i++) {
             s += i + ")";
             s += this.getCards().get(i).getName() + ": ";
