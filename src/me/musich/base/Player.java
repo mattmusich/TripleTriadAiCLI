@@ -8,17 +8,15 @@ import java.util.List;
  */
 public class Player {
 
-    public static final int PLAYER_NUMBER_ONE = 1;
-    public static final int PLAYER_NUMBER_TWO = 2;
 
     private String name;
     private Hand cards;
     private int currentDeckIndex;
     private int playerNumber;
 
-    public Player(String name) {
+    public Player(String name, int num) {
         this.name = name;
-
+        this.playerNumber = num;
         cards = null;
     }
 

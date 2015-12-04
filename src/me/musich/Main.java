@@ -4,7 +4,9 @@ import me.musich.base.*;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
 //TODO BETTER GUI, HAND REMOVAL, OUT OF HAND CARD PLAY ERROR, CANT PLAY ON SAME SPOT TWICE, ACTUAL AI
@@ -32,14 +34,14 @@ public class Main {
                 }
             }
             //gen players
-            Player p1 = new Player("Player 1");
-            Player p2 = new Player("Player 2");
+            Player p1 = new Player("Player 1",0);
+            Player p2 = new Player("Player 2",1);
             //gen hands/cards p1
-            Card c1 = new Card("1154zard", 1, 1, 5, 4, 1, 0);
-            Card c2 = new Card("5411zard", 5, 4, 1, 1, 1, 0);
-            Card c3 = new Card("5114zard", 5, 1, 1, 4, 1, 0);
-            Card c4 = new Card("4151zard", 4, 1, 5, 1, 1, 0);
-            Card c5 = new Card("1541zard", 1, 5, 4, 1, 1, 0);
+            Card c1 = randomCard(0);
+            Card c2 = randomCard(0);
+            Card c3 = randomCard(0);
+            Card c4 = randomCard(0);
+            Card c5 = randomCard(0);
             List<Card> p1cards = new ArrayList<>();
             p1cards.add(c1);
             p1cards.add(c2);
@@ -51,11 +53,11 @@ public class Main {
             p1.setHand(p1hand);
 
             //gen hands/cards p2
-            Card c6 = new Card("1154zard2", 1, 1, 5, 4, 1, 1);
-            Card c7 = new Card("5411zard2", 5, 4, 1, 1, 1, 1);
-            Card c8 = new Card("5114zard2", 5, 1, 1, 4, 1, 1);
-            Card c9 = new Card("4151zard2", 4, 1, 5, 1, 1, 1);
-            Card c10 = new Card("1541zard2", 1, 5, 4, 1, 1, 1);
+            Card c6 = randomCard(1);
+            Card c7 = randomCard(1);
+            Card c8 = randomCard(1);
+            Card c9 = randomCard(1);
+            Card c10 = randomCard(1);
             List<Card> p2cards = new ArrayList<>();
             p2cards.add(c6);
             p2cards.add(c7);
@@ -87,7 +89,17 @@ public class Main {
 
     }
 
-
+    public static Card randomCard(int p){
+        String[] names = {"Kinemon","Shaymon","Cryomon","Twimon","Jillmon","Venomon","Sarumon","Canimon","Purimon","Saltmon","liemon","Pokemon","Monmon","Geemon","Deemon"};
+        int index = new Random().nextInt(names.length);
+        String name = names[index];
+        int player = 0;
+        if(p == 1){
+            player = 1;
+        }
+        Card c = new Card(name, ThreadLocalRandom.current().nextInt(1, 9),ThreadLocalRandom.current().nextInt(1, 9),ThreadLocalRandom.current().nextInt(1, 9),ThreadLocalRandom.current().nextInt(1, 9),1,player);
+        return c;
+    }
 
 
 

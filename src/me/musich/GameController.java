@@ -33,11 +33,12 @@ public class GameController {
 
         for (int i = 1; i <= 9; i++){
 
-            if(playerCount == 0) {
+            if(playerCount != 0) {
                 System.out.println(board.showBoard());
 //                for (Integer q: usedSlots ) {
 //                    System.out.println(q + " ");
 //                }
+                System.out.println(p1.getCurrentHand().toString() + "\n" + p2.getCurrentHand().toString());
             }
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){ //turns 1 3 5 7 9
                 if(playerCount == 0) { //ai
@@ -45,25 +46,29 @@ public class GameController {
                     int s = data.get(1);
                     int c = data.get(0);
                     board.setSlot(s, p1.getCurrentHand().getCards().get(c));
+                    p1.getCurrentHand().getCards().remove(c);
                 }
                 if(playerCount == 1 || playerCount == 2){ //human
                     List<Integer> data = getCommand(p1);
                     int s = data.get(1);
                     int c = data.get(0);
                     board.setSlot(s, p1.getCurrentHand().getCards().get(c));
+                    p1.getCurrentHand().getCards().remove(c);
                 }
             } else { //turns 2 4 6 8
                 if(playerCount == 0 || playerCount == 1) { //ai
-                    List<Integer> data = getAICommand(p2);
+                    List<Integer> data = getAdvAICommand(p2);
                     int s = data.get(1);
                     int c = data.get(0);
                     board.setSlot(s, p2.getCurrentHand().getCards().get(c));
+                    p2.getCurrentHand().getCards().remove(c);
                 }
                 if(playerCount == 2){ //human
                     List<Integer> data = getCommand(p2);
                     int s = data.get(1);
                     int c = data.get(0);
                     board.setSlot(s, p2.getCurrentHand().getCards().get(c));
+                    p2.getCurrentHand().getCards().remove(c);
                 }
             }
         }
@@ -111,7 +116,7 @@ public class GameController {
         List<Integer> data = new ArrayList<>();
         boolean used = false;
 
-        int cIndex = ThreadLocalRandom.current().nextInt(0, 4);
+        int cIndex = ThreadLocalRandom.current().nextInt(0, p.getCurrentHand().getCards().size());
         data.add(cIndex);
         while(!used) { //error check to see if slot is used in the game without having to parse the board
             int sIndex = ThreadLocalRandom.current().nextInt(1, 10);

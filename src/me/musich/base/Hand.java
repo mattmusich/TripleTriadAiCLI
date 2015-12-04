@@ -60,6 +60,7 @@ public class Hand {
                 worstCard = c;
             }
         }
+        //System.out.println(worstCard.getVals());
         return getCardIndex(worstCard);
     }
 

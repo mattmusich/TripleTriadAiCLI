@@ -3,20 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c1750a24-2d99-406d-8aff-c75b90ae102f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/AdvAi.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/AdvAi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Board.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Board.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Card.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Card.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/GameController.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/GameController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Hand.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Hand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/Main.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Player.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Slot.class" afterPath="$PROJECT_DIR$/out/production/TripleTriadAiCLI/me/musich/base/Slot.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/AdvAi.java" afterPath="$PROJECT_DIR$/src/me/musich/AdvAi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Board.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Card.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Card.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/GameController.java" afterPath="$PROJECT_DIR$/src/me/musich/GameController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Hand.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Hand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/Main.java" afterPath="$PROJECT_DIR$/src/me/musich/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/musich/base/Player.java" afterPath="$PROJECT_DIR$/src/me/musich/base/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TripleTriadAiCLI.iws" />
@@ -43,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/musich/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="19" selection-start-line="37" selection-start-column="18" selection-end-line="39" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.6889128">
+              <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvAi.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdvAi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/musich/AdvAi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89020455">
-              <caret line="68" column="61" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -77,10 +72,10 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/base/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+              <caret line="38" column="30" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="30" />
               <folding>
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,10 +85,10 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/base/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
-                <element signature="method#setSlot#0;class#Board#0" expanded="false" />
                 <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+                <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
                 <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
               </folding>
             </state>
@@ -124,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/me/musich/base/Hand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+              <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -151,14 +146,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/me/musich/base/Slot.java" />
-        <option value="$PROJECT_DIR$/src/me/musich/base/Player.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/me/musich/base/Board.java" />
-        <option value="$PROJECT_DIR$/src/me/musich/GameController.java" />
-        <option value="$PROJECT_DIR$/src/me/musich/Main.java" />
         <option value="$PROJECT_DIR$/src/me/musich/base/Card.java" />
+        <option value="$PROJECT_DIR$/src/me/musich/base/Player.java" />
+        <option value="$PROJECT_DIR$/src/me/musich/Main.java" />
         <option value="$PROJECT_DIR$/src/me/musich/base/Hand.java" />
         <option value="$PROJECT_DIR$/src/me/musich/AdvAi.java" />
+        <option value="$PROJECT_DIR$/src/me/musich/GameController.java" />
       </list>
     </option>
   </component>
@@ -392,6 +387,38 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -418,6 +445,22 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -449,11 +492,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845187" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810867" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -526,8 +569,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -537,8 +580,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
           </folding>
         </state>
@@ -593,8 +636,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,8 +647,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
           </folding>
         </state>
@@ -660,8 +703,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,8 +714,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
           </folding>
         </state>
@@ -727,8 +770,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -738,8 +781,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
           </folding>
         </state>
@@ -794,8 +837,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -805,8 +848,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
           </folding>
         </state>
@@ -861,8 +904,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -872,8 +915,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
           </folding>
         </state>
@@ -921,42 +964,11 @@
     <entry file="file://$PROJECT_DIR$/src/me/musich/base/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
-            <element signature="method#setSlot#0;class#Board#0" expanded="false" />
             <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#cardCapture#0;class#Board#0" expanded="false" />
             <element signature="method#isBoardEmpty#0;class#Board#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/musich/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="19" selection-start-line="37" selection-start-column="18" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/musich/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/musich/base/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -969,19 +981,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/musich/base/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="30" />
+          <folding>
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/musich/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/musich/base/Hand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/musich/AdvAi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89020455">
-          <caret line="68" column="61" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/musich/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6889128">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
