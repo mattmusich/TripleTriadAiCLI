@@ -8,10 +8,8 @@ import java.util.List;
  */
 public class Player {
 
-
     private String name;
     private Hand cards;
-    private int currentDeckIndex;
     private int playerNumber;
 
     public Player(String name, int num) {
@@ -20,16 +18,13 @@ public class Player {
         cards = null;
     }
 
+    //getters and Setters for Player
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Hand getHand() {
-        return cards;
     }
 
     public void setHand(Hand cards) {
@@ -42,14 +37,6 @@ public class Player {
 
     public void setPlayerNumber(int playerNumber) {
         this.playerNumber = playerNumber;
-    }
-
-    public int getCurrentHandIndex() {
-        return currentDeckIndex;
-    }
-
-    public void setCurrentHandIndex(int currentDeckIndex) {
-        this.currentDeckIndex = currentDeckIndex;
     }
 
     public Hand getCurrentHand() {

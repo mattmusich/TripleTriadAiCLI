@@ -2,6 +2,9 @@ package me.musich.base;
 
 /**
  * Created by matt on 10/27/2015.
+ * A card contains all of the data needed to make the math of the game work
+ * A card can be placed in a Hand or a slot on the Board
+ * The 4 values set for the sides of the cards are managed here
  */
 public class Card {
 

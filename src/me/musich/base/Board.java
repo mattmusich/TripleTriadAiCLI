@@ -2,6 +2,7 @@ package me.musich.base;
 
 /**
  * Created by matt on 10/27/2015.
+ * The board contains the slot objects that house the card objects
  */
 public class Board {
 
@@ -19,6 +20,7 @@ public class Board {
         this.slots = slots;
     }
 
+    //used to set a card at a position on the board and calls cardCapture()
     public void setSlot(int pos, Card card){
         switch (pos) {
             case 1:
@@ -102,6 +104,7 @@ public class Board {
         return b;
     }
 
+    //trenders the board into the cli
     public String showBoard(){
         String s1 = "";
         String s2 = "";
@@ -436,6 +439,7 @@ public class Board {
         return s1 + "\n" + s2  + "\n" + s3 + "\n" + s4 + "\n" + s5 + "\n" + s6 + "\n" + s7 + "\n" + s8 + "\n" + s9 + "\n" + s10 + "\n" + s11 + "\n";
     }
 
+    //called when a card is placed on the board and will make any card status changes if capture is fulfilled
     public void cardCapture(int pos, Card card){
         switch (pos) {
             case 1:
@@ -579,8 +583,8 @@ public class Board {
         }
     }
 
+    //checks if the board contains no cards aka first turn
     public boolean isBoardEmpty(){
-
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 Slot s = slots[i][j];
@@ -590,7 +594,6 @@ public class Board {
             }
         }
         return true;
-
     }
 
 

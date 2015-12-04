@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 /**
  * Created by matt on 10/27/2015.
+ * A hand contains the list of Cards and a Hand is assigned to the Player object
+ * Some of the AI processing is done here to find strong and weak cards in the hand
  */
 public class Hand {
 
@@ -53,6 +55,7 @@ public class Hand {
         return -1;
     }
 
+    //will return the lowest avg valued card
     public int getWeakestCard(){
         Card worstCard = new Card("default", 9, 9, 9, 9, 0, 0);
         for (Card c: cards) {
@@ -64,6 +67,7 @@ public class Hand {
         return getCardIndex(worstCard);
     }
 
+    //will return the best card suited for placement in the top left corner of the board
     public int getBestTopLeftCornerCard(){
         Card bestCard = new Card("default", 0, 0, 0, 0, 0, 0);
         for (Card c: cards) {
