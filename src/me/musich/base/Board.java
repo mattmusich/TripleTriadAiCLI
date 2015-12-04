@@ -60,7 +60,7 @@ public class Board {
         }
     }
 
-    public String showBoard(){
+    public String showBoardCondensed(){
         String b = "";
 
         if(slots[0][0].getCard() != null) {
@@ -100,6 +100,340 @@ public class Board {
         } else { b += "         ";}
         b += "\n";
         return b;
+    }
+
+    public String showBoard(){
+        String s1 = "";
+        String s2 = "";
+        String s3 = "";
+        String s4 = "-----------------------";
+        String s5 = "";
+        String s6 = "";
+        String s7 = "";
+        String s8 = "-----------------------";
+        String s9 = "";
+        String s10 = "";
+        String s11 = "";
+
+        //s1 s2 s3
+        if(slots[0][0].getCard() != null) {
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += " ";
+            s2 += slots[0][0].getCard().getleftVal();
+            s3 += " ";
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += slots[0][0].getCard().getupVal();
+            s2 += slots[0][0].getCard().getStatus();
+            s3 += slots[0][0].getCard().getdownVal();
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += " ";
+            s2 += slots[0][0].getCard().getrightVal();
+            s3 += " ";
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += "|";
+            s2 += "|";
+            s3 += "|";
+        } else {
+            s1 += "       |";
+            s2 += "       |";
+            s3 += "       |";
+        }
+        if(slots[1][0].getCard() != null) {
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += " ";
+            s2 += slots[1][0].getCard().getleftVal();
+            s3 += " ";
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += slots[1][0].getCard().getupVal();
+            s2 += slots[1][0].getCard().getStatus();
+            s3 += slots[1][0].getCard().getdownVal();
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += " ";
+            s2 += slots[1][0].getCard().getrightVal();
+            s3 += " ";
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += "|";
+            s2 += "|";
+            s3 += "|";
+        } else {
+            s1 += "       |";
+            s2 += "       |";
+            s3 += "       |";
+        }
+        if(slots[2][0].getCard() != null) {
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += " ";
+            s2 += slots[2][0].getCard().getleftVal();
+            s3 += " ";
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += slots[2][0].getCard().getupVal();
+            s2 += slots[2][0].getCard().getStatus();
+            s3 += slots[2][0].getCard().getdownVal();
+
+            s1 += " ";
+            s2 += " ";
+            s3 += " ";
+
+            s1 += " ";
+            s2 += slots[2][0].getCard().getrightVal();
+            s3 += " ";
+
+        } else {
+            s1 += "       ";
+            s2 += "       ";
+            s3 += "       ";
+        }
+
+        //s5 s6 s7
+        if(slots[0][1].getCard() != null) {
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += " ";
+            s6 += slots[0][1].getCard().getleftVal();
+            s7 += " ";
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += slots[0][1].getCard().getupVal();
+            s6 += slots[0][1].getCard().getStatus();
+            s7 += slots[0][1].getCard().getdownVal();
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += " ";
+            s6 += slots[0][1].getCard().getrightVal();
+            s7 += " ";
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += "|";
+            s6 += "|";
+            s7 += "|";
+        } else {
+            s5 += "       |";
+            s6 += "       |";
+            s7 += "       |";
+        }
+        if(slots[1][1].getCard() != null) {
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += " ";
+            s6 += slots[1][1].getCard().getleftVal();
+            s7 += " ";
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += slots[1][1].getCard().getupVal();
+            s6 += slots[1][1].getCard().getStatus();
+            s7 += slots[1][1].getCard().getdownVal();
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += " ";
+            s6 += slots[1][1].getCard().getrightVal();
+            s7 += " ";
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += "|";
+            s6 += "|";
+            s7 += "|";
+        } else {
+            s5 += "       |";
+            s6 += "       |";
+            s7 += "       |";
+        }
+        if(slots[2][1].getCard() != null) {
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += " ";
+            s6 += slots[2][1].getCard().getleftVal();
+            s7 += " ";
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += slots[2][1].getCard().getupVal();
+            s6 += slots[2][1].getCard().getStatus();
+            s7 += slots[2][1].getCard().getdownVal();
+
+            s5 += " ";
+            s6 += " ";
+            s7 += " ";
+
+            s5 += " ";
+            s6 += slots[2][1].getCard().getrightVal();
+            s7 += " ";
+
+        } else {
+            s5 += "       ";
+            s6 += "       ";
+            s7 += "       ";
+        }
+
+        //s9 s10 s11
+        if(slots[0][2].getCard() != null) {
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += " ";
+            s10 += slots[0][2].getCard().getleftVal();
+            s11 += " ";
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += slots[0][2].getCard().getupVal();
+            s10 += slots[0][2].getCard().getStatus();
+            s11 += slots[0][2].getCard().getdownVal();
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += " ";
+            s10 += slots[0][2].getCard().getrightVal();
+            s11 += " ";
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += "|";
+            s10 += "|";
+            s11 += "|";
+        } else {
+            s9 += "       |";
+            s10 += "       |";
+            s11 += "       |";
+        }
+        if(slots[1][2].getCard() != null) {
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += " ";
+            s10 += slots[1][2].getCard().getleftVal();
+            s11 += " ";
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += slots[1][2].getCard().getupVal();
+            s10 += slots[1][2].getCard().getStatus();
+            s11 += slots[1][2].getCard().getdownVal();
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += " ";
+            s10 += slots[1][2].getCard().getrightVal();
+            s11 += " ";
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += "|";
+            s10 += "|";
+            s11 += "|";
+        } else {
+            s9 += "       |";
+            s10 += "       |";
+            s11 += "       |";
+        }
+        if(slots[2][2].getCard() != null) {
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += " ";
+            s10 += slots[2][2].getCard().getleftVal();
+            s11 += " ";
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += slots[2][2].getCard().getupVal();
+            s10 += slots[2][2].getCard().getStatus();
+            s11 += slots[2][2].getCard().getdownVal();
+
+            s9 += " ";
+            s10 += " ";
+            s11 += " ";
+
+            s9 += " ";
+            s10 += slots[2][2].getCard().getrightVal();
+            s11 += " ";
+
+        } else {
+            s9 += "       ";
+            s10 += "       ";
+            s11 += "       ";
+        }
+
+        return s1 + "\n" + s2  + "\n" + s3 + "\n" + s4 + "\n" + s5 + "\n" + s6 + "\n" + s7 + "\n" + s8 + "\n" + s9 + "\n" + s10 + "\n" + s11 + "\n";
     }
 
     public void cardCapture(int pos, Card card){

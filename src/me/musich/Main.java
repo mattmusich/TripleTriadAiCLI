@@ -68,7 +68,7 @@ public class Main {
             p2hand.setCards(p2cards);
             p2.setHand(p2hand);
 
-            GameController game = new GameController(board,p1,p2,Integer.parseInt(numPlayers));
+            GameController game = new GameController(board,p1,p2,Integer.parseInt(numPlayers),Integer.parseInt(numGames));
 
             List<Integer> stats = game.startGame();
             if (stats.get(0) == 0){
